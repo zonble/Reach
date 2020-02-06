@@ -12,10 +12,10 @@ Pod::Spec.new do |spec|
   spec.tvos.deployment_target = '9.0'
   spec.watchos.deployment_target = '2.0'
 
-  spec.swift_version  = '4.0'
+  spec.swift_versions  = ['4.0', '4.2', '5.0', '5.1']
   spec.source_files   = 'Source/*.swift'
   spec.source         = { :git => "https://github.com/therapychat/Reach.git", :tag => spec.version.to_s }
-  
+
   spec.ios.framework  = 'SystemConfiguration'
   spec.osx.framework  = 'SystemConfiguration'
   spec.tvos.framework = 'SystemConfiguration'
